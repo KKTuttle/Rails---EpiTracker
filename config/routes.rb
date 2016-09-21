@@ -2,7 +2,12 @@ Rails.application.routes.draw do
   devise_for :users, :controllers => { registrations: 'registrations' }
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :entries, :users, :meals, :exercises
+  
+  resources :users do
+    resources :entries do
+      resources :meals, :exercises
+    end
+  end
 
   root to: 'home#index'
 end

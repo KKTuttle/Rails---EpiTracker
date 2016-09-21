@@ -7,7 +7,9 @@
 <div class="calendar">
   <%= month_calendar do |date| %>
     <%= date %> <br>
-    <%= link_to "New Health Journal Entry", new_entry_path %>
+    <%= button_to user_entries_path(@user) do %>
+      <strong>Add new Entry</strong</>
+    <% end %>
   <% end %>
 
 </div>
