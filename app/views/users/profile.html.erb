@@ -1,0 +1,12 @@
+<h2>Profile</h2>
+
+<%= @user.email %><br>
+
+<%= image_tag @user.avatar.url(:medium) %>
+
+<div class="calendar">
+  <%= month_calendar do |date| %>
+    <%= date %>
+  <% end %>
+
+</div>
