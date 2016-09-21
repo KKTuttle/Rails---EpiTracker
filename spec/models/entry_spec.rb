@@ -1,5 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Entry, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it { should belong_to :user}
+  it { should have_one :meal}
+  it { should have_one :exercise}
 end
