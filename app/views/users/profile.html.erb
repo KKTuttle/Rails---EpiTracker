@@ -6,7 +6,8 @@
 
 <div class="calendar">
   <%= month_calendar do |date| %>
-    <%= date %>
+    <%= date %> <br>
+    <%= link_to "New Health Journal Entry", new_entry_path %>
   <% end %>
 
 </div>
