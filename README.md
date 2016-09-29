@@ -1,4 +1,4 @@
-#  Rather
+#  EpiTracker
 ## *By Katarina Tuttle*
 
 Heath tracker that allow user to make different entry for meal, exercise etc.
